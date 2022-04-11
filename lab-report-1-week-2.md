@@ -12,7 +12,15 @@ Open the file after it's done downloading and follow all of the on-screen instru
 
 **Step 2:** Remotely Connect
 
-Remotely connecting allows you to use your local computer to access a remote computer over the Internet and do work remotely. 
+Remotely connecting allows you to use your local computer to access a remote computer over the Internet and do work remotely from where you are. Typically, you will have an unique account given to you. For this class, you can look up your course-specific account with this [link](https://sdacs.ucsd.edu/~icc/index.php). Use the username you usually use for your other accounts (this is usually first initial and last name).
+
+![Image](acc.png)
+
+Under "additional accounts" you should see your usernames for your other accounts. For 15L, it should be the one that starts with cs15lsp22 followed by three letters. (The sp22 part might change to correspond with your quarter). If this is your first time using this account, you will need to set your password up by pressing "Change your Password" for this account and following the instructions.
+
+Next, open a terminal and 
+
+$ ssh cs15lsp22zz@ieng6.ucsd.edu
 
 **Step 3:** Try Out Basic Commands
 
