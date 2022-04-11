@@ -82,7 +82,7 @@ $ mkdir .ssh
 
 Then logout and run the following command on the client to copy the public key to the server:
 
-$ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
+$ scp /Users/< user-name >/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys
 
 **Make sure to replace the neccessary information with your own information. For example, your username and the path.
 
