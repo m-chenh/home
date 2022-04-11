@@ -36,6 +36,18 @@ When successfully logged in, you should see something similar to this. This mean
 
 Now you can test out some basic commands! You can try both on your computer and the remote computer. To logout of the server, you can CTRL + D or write logout. Then the commands will be run on the client.
 
+- **cd**: lets you change directories and move around the directories to look for files
+- **ls**: gives a list of all the files in the current directory
+- **pwd**: gives you the path of where you currently are
+- **mkdir**: makes a new directory or folder
+- **cp**: lets you copy files
+- **man**: provides a manual for certain commands
+
+For example, I will list out the folders on my desktop with the ls command:
+
+![Image](ls.png)
+
+
 **Step 4:** Move Files with scp
 
 To copy files from the client to the server, we will run the scp command on the **client**. From the directory where the file is located, run this command. Remember to replace cs15lsp22zz with your username:
@@ -60,9 +72,9 @@ $ ssh-keygen
 
 ** Make sure you don't add a passphrase and just press enter
 
-![Image](scpSuccess.png)
+![Image](key.png)
 
-Now copy the public key to the .ssh directory on the remote computer. After logging into the server with ssh, make the .ssh directory:
+Now copy the public key to the .ssh directory on the remote computer. Log into the server with ssh and make the .ssh directory:
 
 $ mkdir .ssh
 
@@ -74,13 +86,17 @@ $ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/autho
 
 **Make sure to replace the neccessary information with your own information. For example, your username and the path.
 
-![Image](nopassword.png)
-
 You should now be able to ssh into the remote computer without needing a password!
+
+![Image](nopassword.png)
 
 **Step 6:** Optimize Remote Running
 To optimize and save time, you can try out the following tips:
+- Save (or even memorize) your information (like your username) or terminal commands somewhere accessible
 - Use the up arrow key to look at previous commands you used
 - Use semicolons to run multiple commands with one line
 - Write commands with quotes after an ssh command to run them on the remote server and exit with one line on the client
-- Save (or even memorize) your information (like your username) or terminal commands somewhere accessible
+
+Here, we ssh into server, run the ls command to list the files in the directory and output the contents of a file all in one line:
+
+![Image](short.png)
