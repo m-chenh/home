@@ -91,7 +91,9 @@ You should now be able to ssh into the remote computer without needing a passwor
 ![Image](nopassword.png)
 
 **Step 6:** Optimize Remote Running
+
 To optimize and save time, you can try out the following tips:
+
 - Save (or even memorize) your information (like your username) or terminal commands somewhere accessible
 - Use the up arrow key to look at previous commands you used
 - Use semicolons to run multiple commands with one line
