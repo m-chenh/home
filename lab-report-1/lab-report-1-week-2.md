@@ -72,7 +72,7 @@ $ ssh-keygen
 
 ** Make sure you don't add a passphrase and just press enter
 
-![Image](key.png)
+![Image](key1.png)
 
 Now copy the public key to the .ssh directory on the remote computer. Log into the server with ssh and make the .ssh directory:
 
