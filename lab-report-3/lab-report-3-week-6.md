@@ -83,6 +83,8 @@ The private key is stored in this location as well in the id_ed25519 file.
 **Step 4:** Change the link from HTTPS url to ssh url
 
     $ git remote set-url origin git@github.com:<Username>/<Project>.git
+
+    
 Replace that link with the ssh url link found on your github repository.
 
 ![](sshLink.png)
