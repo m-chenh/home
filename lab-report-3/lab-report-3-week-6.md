@@ -4,6 +4,7 @@
 So far, we've been using the following command to log into the remote server:
 
     $ ssh cs15lsp22zzz@ieng6.ucsd.edu
+    
 To make this more efficient, we could remove the need to input our course-specific username in the command. By adding an entry to our ssh configuration file, we're telling ssh what username to use for different servers.
 
 **Step 1:** Create a configuration file in your .ssh directory. 
