@@ -62,28 +62,35 @@ When prompted to "Enter passphrase", press ENTER for no passphrase.
 
 **Step 3:** Add the SSH key to your Github account
 
-    # Displays the contents in public key file
+    # This displays the contents in public key file
     $ cat ~/.ssh/id_ed25519.pub
     # Copy the output to clipboard
+
+It should look like this:
+![](keylocation.png)
 
 Then go to Github then go to settings. Under "access" click on "SSH and GPG keys" and add a new SSH key. Paste the contents in your clipboard into the given field. Then make a new key. 
 
 The public key should be stored on Github like this:
 ![Github keys](GithubKey.png)
 
-The public key is stored in the id_ed25519.pub file on ieng6 like this in the .ssh directory:
+The public key is stored in the id_ed25519.pub file in the .ssh directory on ieng6 like this:
 
 ![ssh keys](keys.png)
-The private key is stored in this location as well.
+The private key is stored in this location as well in the id_ed25519 file.
 
 **Step 4:** Change the link from HTTPS url to ssh url
 
     $ git remote set-url origin git@github.com:<Username>/<Project>.git
 Replace that link with the ssh url link found on your github repository.
 
+![](sshLink.png)
+
 **Step 5:** Test it out with git commands
+
+First I made a change to the file. Then I "added" the changes so I could commit the changes. Then I committed the changes with a commit message (-m option) and pushed the changes to the repository and it worked!
+
 ![git push](gitPush.png)
-First I made a change to the file. Then I added the changes so I could commit the changes with a commit message. Then I committed the changes and pushed the changes to the repository and it worked!
 
 [Here](https://github.com/m-chenh/markdown-parser/commit/01448b13111dbe31b7ed24462d8f332b20a3a91f) is the link to the commit on Github.
 
@@ -108,3 +115,10 @@ First I ssh'd into the remote server and listed out the files and directories on
 **Step 4:** Try it all with one command by using semicolon.
 
 First write the scp command to copy over the directory recursively, then use a semicolon and write the ssh command to login to the remote server. Then the rest will be in quotes in order to run these commands directly on the remote server. Write the cd command to change directory into the directory we just copied over, and then use a semicolon and write the javac and java command (with a semicolon between them) to compile and run the files directly on the remote server then exit.
+
+Note: Make sure to use /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac and software/CSE/oracle-java-17/jdk-17.0.1/bin/java instead of just javac and java to tell the server which versions to use.
+
+Here's what it should look like! 3 tests were run and all of them passed.
+
+![](oneLine.png)
+![](passed.png)
