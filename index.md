@@ -3,3 +3,5 @@
 [Lab Report 2: ](https://m-chenh.github.io/cse15l-lab-reports/lab-report-2/lab-report-2-week-4.html)Debugging Example
 
 [Lab Report 3: ](https://m-chenh.github.io/cse15l-lab-reports/lab-report-3/lab-report-3-week-6.html)Streamline ssh Configuration, Setup Github Access from ieng6, and Copy whole directories with scp -r
+
+[Lab Report 4: ](https://m-chenh.github.io/cse15l-lab-reports/lab-report-4/lab-report-4-week-8.html)Testing and Debugging MarkdownParser
